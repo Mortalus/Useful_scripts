@@ -1,0 +1,10 @@
+
+
+#Gitleaks
+alias gitleaks='docker run --rm --name=gitleaks zricethezav/gitleaks -v -r'
+docker run --rm --name=gitleaks zricethezav/gitleaks -v -r https://github.com/zricethezav/gitleaks.git
+
+
+#rustscan - faster nmap
+alias rustscan='docker run -it --rm --name rustscan rustscan/rustscan:alpine'
+rustscan 127.0.0.1 -t 500 -b 1500 -- -A
